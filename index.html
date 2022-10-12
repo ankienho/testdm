@@ -6,10 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Làng Đá đây</title>
     <script src = "dm.js"></script>
+    <link rel="stylesheet" href="dm.css">
 </head>
 <body>
-    <img  onclick="checkthisSound()" id = kim src = "srcpic/kim.png">
-    <audio id = "audio" autoplay></audio>
-    <button onclick="checkthisSound()"> nhấn đây hoặc nhấn vào mặt con Kim </button> 
+    
+        <div id = "text" class="text">
+            Nếu bạn cảm thấy buồn chán hãy nhấn vào mặt con Kim! 
+        </div></br>
+        <p>chữ màu vàng khó nhìn lắm đk :)) ?</p>
+        <input class="nut" type="button" value="nhấn đây đổi màu chữ cho dễ nhìn nè!" onclick="luamne()" />
+    
+    <div>
+        <img class= "anhconKim"  onclick="deom()" ondblclick="hienhinh()" id = "kim" src = "srcpic/kim.png">
+        <audio id = "audio" autoplay></audio>
+        <audio id = "lua" autoplay></audio>
+
+        <img class="anhSinh" id="sinh" alt="muốn xem thì nhấn vào mặt con KIM" onclick="checkthisSound()">
+    </div>
 </body>
 </html>
